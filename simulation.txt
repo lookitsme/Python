@@ -1,0 +1,16 @@
+class Car: This class defines the blueprint for a car object. Each car object has the following attributes:
+name: name of the car
+speed: speed of the car
+fuel_level: fuel level of the car
+tire_wear: tire wear of the car
+distance_traveled: distance traveled by the car
+The class also has the following methods:
+
+simulate_pit_stop(): this method simulates the pit stop of the car. When a car runs out of fuel, it needs to make a pit stop to refuel. Also, during the pit stop, the tire wear is decreased and the speed of the car is increased to simulate the change of tires and the repair work.
+simulate_weather(): this method simulates the effect of weather on the car. It generates random values for wind, rain and temperature, and uses these values to decrease the speed of the car, increase the tire wear and decrease the fuel level. Also, the method will make sure that the speed is not negative.
+__str__(): this method is used to display the state of the car in a human-readable format.
+simulate_race(cars, laps): This function simulates the race. It takes two arguments: a list of cars and the number of laps. For each lap, it iterates over all the cars and simulates the weather and the distance traveled by each car. If the fuel level of a car is less than or equal to 0, it calls the simulate_pit_stop() method.
+
+display_race(cars): This function displays the state of all the cars at the end of the race. It takes a list of cars as an argument and prints the state of each car using the __str__() method.
+
+if __name__ == "__main__": This is the main part of the program. It creates a list of cars and initializes them
