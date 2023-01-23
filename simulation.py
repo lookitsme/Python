@@ -9,9 +9,8 @@ class Car:
         self.distance_traveled = 0
         
     def simulate_pit_stop(self):
-        pit_stop_time = random.uniform(5,15)
-        self.fuel_level -= 20* pit_stop_time/10
-        self.tire_wear -= 30* pit_stop_time/10
+        self.fuel_level -= 20
+        self.tire_wear -= 30
         self.speed += 5
         
     def simulate_weather(self):
